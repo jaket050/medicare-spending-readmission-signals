@@ -7,14 +7,14 @@
 ## Dashboard Preview
 
 ### Page 1 — National Quality & Readmission Risk Analysis
-![National Dashboard](visuals/Screenshot_2025-12-16_033610.png)
+![National Dashboard](visuals/Screenshot%202025-12-16%20033610.png)
 
 > Filters: State, Hospital Owner, Rating Band, Risk Level
 > KPI cards: Hospitals with Score, High MSPB Outlier %, Median MSPB Score, Avg Readmission Worse Share %, Average Gap
 > Visuals: MSPB vs. Readmission scatter plot with risk-level color coding, Hospital Risk Concentration choropleth map, High Risk Hospitals by Ownership treemap
 
 ### Page 2 — Hospital-Level Drill Down
-![Drill Down Dashboard](visuals/Screenshot_2025-12-16_041050.png)
+![Drill Down Dashboard](visuals/Screenshot%202025-12-16%20041050.png)
 
 > Filters: State, Owner Type, MSPB Range slider, Readmission Worse Share slider, Risk Level
 > Visuals: Hospital Performance table sorted by severity, MSPB vs. National Median gauge, Readmission vs. National Avg gauge
@@ -87,8 +87,8 @@ Both source datasets were cleaned and standardized before analysis. All transfor
 | zipCode | zipCode | Text format | Avoid numeric truncation |
 | readmGroupMeasure* | readmGroupMeasure* | Whole number; removed errors | Readmission outcome counts |
 
-![Medicare Field Mapping](visuals/Medicare_Field_Mapping.png)
-![HospitalGen Field Mapping](visuals/HospitalGen_Field_Mapping.png)
+![Medicare Field Mapping](visuals/Medicare%20Field%20Mapping.png)
+![HospitalGen Field Mapping](visuals/HospitalGen%20Field%20Mapping.png)
 
 ---
 
@@ -125,8 +125,8 @@ Derived fields built on top of cleaned data to power outlier detection and bench
 
 The MSPB distribution is approximately normal with a slight right skew — most facilities cluster near the national median of 0.990, with a long tail of high-cost outliers.
 
-![MSPB Distribution](visuals/Healthcare_-_Avg_MSPB_score_by_Num_of_facilities.png)
-![EDA Summary](visuals/Healthcare_-_EDA.png)
+![MSPB Distribution](visuals/Healthcare%20-%20Avg%20MSPB%20score%20by%20Num%20of%20facilities.png)
+![EDA Summary](visuals/Healthcare%20-%20EDA.png)
 
 ---
 
@@ -137,8 +137,8 @@ The MSPB distribution is approximately normal with a slight right skew — most 
 - Top states by outlier count: **FL (7), CA (6), PA (4), TX (3), OH (3), NJ (3)**
 - Top states by outlier share %: **NE (5.26%), NJ (5.00%), LA (4.55%), FL (4.49%)**
 
-![High Outliers by State](visuals/Healthcare_-_High_outliers_by_state.png)
-![Outlier Share by State](visuals/Healthcare_-_Outlier___share_by_state.png)
+![High Outliers by State](visuals/Healthcare%20-%20High%20outliers%20by%20state.png)
+![Outlier Share by State](visuals/Healthcare%20-%20Outlier%20%25%20share%20by%20state.png)
 
 ### Quality-Cost Relationship
 
@@ -150,22 +150,22 @@ The MSPB distribution is approximately normal with a slight right skew — most 
 
 - Pearson r between MSPB and readmission-worse share: **r = 0.22** — directional relationship confirmed
 
-![Rating Band Analysis](visuals/Healthcare_-_Distribution_of_MSPB_to_Hospital_rating.png)
-![MSPB vs Outlier Flag](visuals/Healthcare_-_Median_MSPB__High_Outlier__share__and_Readmisson_worse_share___by_Outlier_flag.png)
+![Rating Band Analysis](visuals/Healthcare%20-%20Distribution%20of%20MSPB%20to%20Hospital%20rating.png)
+![MSPB vs Outlier Flag](visuals/Healthcare%20-%20Median%20MSPB%2C%20High%20Outlier%25%20share%2C%20and%20Readmisson%20worse%20share%20%25%20by%20Outlier%20flag.png)
 
 ### Geographic Patterns
 - **Highest state medians:** NJ (1.065), LA (1.060), NV (1.060), AR (1.040), TX (1.040)
 - **Lowest state medians:** OR, AK, MT, MN — significant geographic variation confirmed
 
-![Median MSPB by State Chart](visuals/Healthcare_-_Median_MSPB_by_state_chart.png)
-![Median MSPB by State Table](visuals/Healthcare_-_Median_MSPB_by_state.png)
+![Median MSPB by State Chart](visuals/Healthcare%20-%20Median%20MSPB%20by%20state%20chart.png)
+![Median MSPB by State Table](visuals/Healthcare%20-%20Median%20MSPB%20by%20state.png)
 
 ### Ownership Type
 - **Highest median MSPB:** Tribal (1.03), Proprietary (1.02), Government-State (1.02)
 - **Lowest median MSPB:** Government-Federal (0.96), Voluntary non-profit Other (0.975)
 
-![Median MSPB by Ownership](visuals/Healthcare_-_Median_MSPB_score_by_Ownership.png)
-![Ownership Distribution](visuals/Healthcare_-_Distribution_of_ownership_type.png)
+![Median MSPB by Ownership](visuals/Healthcare%20-%20Median%20MSPB%20score%20by%20Ownership.png)
+![Ownership Distribution](visuals/Healthcare%20-%20Distribution%20of%20ownership%20type.png)
 
 ### Risk Classification (Power BI)
 The dashboard introduces a four-tier **Risk Level** classification combining MSPB and readmission signals:
@@ -181,8 +181,8 @@ The dashboard introduces a four-tier **Risk Level** classification combining MSP
 - **Physician-owned hospitals:** 25% high-risk share — highest of any ownership type
 - **Proprietary hospitals:** 22.25% high-risk share
 
-![Extreme Risk Filter View](visuals/Screenshot_2025-12-16_041437.png)
-![Ownership Treemap Detail](visuals/Screenshot_2025-12-16_041509.png)
+![Extreme Risk Filter View](visuals/Screenshot%202025-12-16%20041437.png)
+![Ownership Treemap Detail](visuals/Screenshot%202025-12-16%20041509.png)
 
 ---
 
